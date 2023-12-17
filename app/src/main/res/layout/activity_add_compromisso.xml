@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".screens.VerCompromissoActivity">
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:inputType="text"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição"
+        android:inputType="textMultiLine"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor"
+        android:inputType="numberDecimal"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data"
+        android:inputType="datetime"
+        android:textSize="16sp" />
+
+    <Switch
+        android:id="@+id/recebidoSw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recebido"
+        android:textColorHighlight="#303F9F" />
+
+    <Switch
+        android:id="@+id/executadoSw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Executado" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:paddingEnd="5dp"
+            android:text="Voltar"
+            android:textColorLink="#00FFFFFF"
+            android:theme="@style/Widget.Material3.Button.OutlinedButton" />
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:paddingStart="5dp"
+        android:text="Salvar" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
