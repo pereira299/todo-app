@@ -34,8 +34,101 @@
             android:theme="@style/Widget.Material3.Button.IconButton"
             app:icon="@android:drawable/ic_menu_add"
             app:iconSize="50dp"
-            app:iconTint="#0369a1"
+            app:iconTint="#1E88E5"
             app:iconTintMode="src_atop" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/titleFilterTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:ems="10"
+        android:hint="Titulo"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <EditText
+            android:id="@+id/dateStartTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:ems="10"
+            android:hint="Data inicial"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="até"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/dateEndTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:ems="10"
+            android:hint="Data final"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/jaFeitoSw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#1E88E5"
+            android:paddingVertical="10dp"
+            android:paddingEnd="5dp"
+            android:text="Apenas realizados" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/jaRecebeSw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:paddingVertical="10dp"
+            android:text="Apenas recebidos" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <Button
+            android:id="@+id/cleanBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:enabled="false"
+            android:text="Limpar filtros"
+            android:theme="@style/Widget.Material3.Button.OutlinedButton" />
+
+        <Button
+            android:id="@+id/filterBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Filtrar" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView

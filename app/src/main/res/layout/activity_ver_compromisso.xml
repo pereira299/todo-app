@@ -122,12 +122,14 @@
         android:id="@+id/voltarBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#1E88E5"
         android:text="Voltar" />
 
     <Button
         android:id="@+id/removeBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#C62828"
         android:foregroundTint="#E53935"
         android:text="Remover"
         android:textColorHighlight="#E53935"
