@@ -1,7 +1,5 @@
 package com.pereira299.app_todo.screens;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -12,8 +10,9 @@ import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.pereira299.app_todo.R;
-import com.pereira299.app_todo.converters.DateConverter;
 import com.pereira299.app_todo.database.AppDatabase;
 import com.pereira299.app_todo.database.DatabaseProvider;
 import com.pereira299.app_todo.entities.Compromisso;

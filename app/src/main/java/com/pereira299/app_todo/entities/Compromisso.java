@@ -3,9 +3,6 @@ package com.pereira299.app_todo.entities;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
-import androidx.room.TypeConverter;
-
-import com.pereira299.app_todo.converters.DateConverter;
 
 import java.io.Serializable;
 import java.util.Date;

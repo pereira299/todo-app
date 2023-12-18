@@ -1,14 +1,14 @@
 package com.pereira299.app_todo.screens;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.pereira299.app_todo.R;
 import com.pereira299.app_todo.dao.CompromissoDao;
@@ -17,7 +17,6 @@ import com.pereira299.app_todo.database.DatabaseProvider;
 import com.pereira299.app_todo.entities.Compromisso;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class VerCompromissoActivity extends AppCompatActivity {
     private TextView textViewDescricao;

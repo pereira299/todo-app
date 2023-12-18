@@ -1,15 +1,17 @@
 package com.pereira299.app_todo.screens.dialog;
+
 import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-import com.pereira299.app_todo.R;
-import com.pereira299.app_todo.listeners.OptionsDialogListener;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
+
+import com.pereira299.app_todo.R;
+import com.pereira299.app_todo.listeners.OptionsDialogListener;
 
 public class DialogOptions extends Dialog {
     private AlertDialog.Builder builder;
